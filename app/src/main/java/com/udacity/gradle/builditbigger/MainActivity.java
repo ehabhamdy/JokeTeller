@@ -14,6 +14,7 @@ import com.ehab.jokeproviderui.DisplayJokeActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    String backendJoke;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,11 +46,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void tellJoke(View view) {
         JokeTeller teller = new JokeTeller();
-        Toast.makeText(this, teller.tellJoke(), Toast.LENGTH_SHORT).show();
 
-        Intent intent = new Intent(this, DisplayJokeActivity.class);
-        intent.putExtra("joke", teller.tellJoke());
-        startActivity(intent);
+        new EndpointsAsyncTask(){
+            @Override
+            protected void onPostExecute(String result) {
+                Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
+                backendJoke = result;
+                Intent intent = new Intent(getApplicationContext(), DisplayJokeActivity.class);
+                intent.putExtra("joke", backendJoke);
+                startActivity(intent);
+            }
+        }.execute(this);
+
 
     }
 

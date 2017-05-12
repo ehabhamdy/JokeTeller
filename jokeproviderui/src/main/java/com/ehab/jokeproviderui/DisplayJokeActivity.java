@@ -19,5 +19,6 @@ public class DisplayJokeActivity extends AppCompatActivity {
         jokeTextView.setText(joke);
 
 
+
     }
 }
