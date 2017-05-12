@@ -9,12 +9,11 @@ import android.view.ViewGroup;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
-
 /**
- * A placeholder fragment containing a simple view.
+ * Created by ehabhamdy on 5/12/17.
  */
-public class MainActivityFragment extends Fragment {
 
+public class MainActivityFragment extends Fragment {
     public MainActivityFragment() {
     }
 

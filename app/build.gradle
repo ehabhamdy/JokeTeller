@@ -17,8 +17,18 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        productFlavors {
+            free {
+                applicationId 'com.udacity.gradle.builditbigger.free'
+            }
+            paid {
+                applicationId 'com.udacity.gradle.builditbigger.paid'
+            }
+        }
+
     }
 }
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -29,6 +39,7 @@ dependencies {
     compile project(':jokeproviderui')
     compile 'com.android.support:appcompat-v7:25.0.0'
     compile 'com.google.android.gms:play-services-ads:10.2.1'
+
     compile 'com.google.firebase:firebase-ads:10.0.1'
     compile 'com.google.code.findbugs:jsr305:2.0.1'
     compile project(path: ':backend', configuration: 'android-endpoints')
@@ -37,5 +48,7 @@ dependencies {
 }
 
 
-
+configurations {
+    compile.exclude group: "org.apache.httpcomponents", module: "httpclient"
+}
 apply plugin: 'com.google.gms.google-services'

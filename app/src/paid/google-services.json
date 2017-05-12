@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "649885924026",
+    "firebase_url": "https://joketellerapp-52c8b.firebaseio.com",
+    "project_id": "joketellerapp-52c8b",
+    "storage_bucket": "joketellerapp-52c8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649885924026:android:9f736eb9fc1e1319",
+        "android_client_info": {
+          "package_name": "com.udacity.gradle.builditbigger.paid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649885924026-ri2jnau2061r2vj8fm5ntro4kh4idb02.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.udacity.gradle.builditbigger",
+            "certificate_hash": "635538c278cb31b9099e52f1fb873d851593df3f"
+          }
+        },
+        {
+          "client_id": "649885924026-fujoior3f1sg60k5ceaur3835lrl5h9b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVBidYT4ocAzEWV3ufKOStEwJAFecu6VI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649885924026-fujoior3f1sg60k5ceaur3835lrl5h9b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
